@@ -1,0 +1,41 @@
+/* univerzalni selector */
+
+*{
+    background-color: black;
+}
+
+/* element selector */
+/* h1{
+    color: chocolate;
+    text-align: center;
+} */
+/* class selector */
+.prvi{
+    color: chocolate;
+    text-align: center;
+}
+.drugi{
+    color: turquoise;
+    text-align: justify;
+}
+.treći{
+    color: goldenrod;
+    text-align: right;
+}
+
+/* id selector */
+
+#četvrti{
+    color: rebeccapurple;
+    text-align: center;
+}
+
+/* atribut selector */
+p[draggable="true"]{
+    color: crimson;
+}
+
+p[draggable="false"]{
+    color: aquamarine;
+    text-align: end;
+}

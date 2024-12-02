@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #crvena{
+            width: 450px;
+            height: 300px;
+            position: relative;
+            background-color: red;
+        }
+        #white{
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: white;
+            top: 90px;
+            left: 160px;
+            z-index: +1;
+        }
+        #blue{
+            background-color: blue;
+            position: absolute;
+            height: 150px;
+            width: 450px;
+            top: 75px;
+        }
+    </style>
+</head>
+<body>
+    <div id="crvena">
+        <div id="white"></div>
+        <div id="blue"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranzicije</title>
+    <Style>
+        .v{
+            height: 500px;
+            width: 500px;
+            position: relative;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .r{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 200px;
+            transform-origin: top left ;
+            transition: 1s;
+        }
+        .g{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            transform-origin: bottom right;
+            transition: 1s;
+        }
+        .y{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            transform-origin: top right;
+            transition: 1s;
+        }
+        .b{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            transform-origin: bottom left;
+            transition: 1s;
+        }
+        div.r:hover .v{
+            transform : rotate(90deg)
+        }
+    </Style>
+</head>
+<body>
+    <div class="v">
+        <div class="r"></div>
+        <div class="y"></div>
+        <div class="g"></div>
+        <div class="b"></div>
+    </div>
+</body>
+</html>

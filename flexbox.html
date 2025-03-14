@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+  <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 3px solid black;
+}
+.container > *{
+    border: 3px solid black;
+}
+.header,
+.footer {
+  background-color: #ADD8E6; /* Light blue */
+  text-align: center;
+  padding: 10px;
+  height: 100px;
+  font-size:xx-large;
+}
+
+.main {
+  display: flex;
+  flex: 1; /* Makes the main section take up remaining space */
+}
+
+.menu {
+  background-color: #DDA0DD; /* Plum */
+  width: 15%; /* Fixed width for the menu */
+  padding: 10px;
+}
+.menu h3{
+  width: 15%; /* Fixed width for the menu */
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  margin-bottom: 10px;
+}
+
+.content {
+  background-color: #FFC0CB; /* Pink */
+  flex: 1; /* Content takes up remaining space */
+  padding: 10px;
+}
+
+.ads {
+  background-color: #DDA0DD; /* Plum */
+  font-weight: bold;
+  font-size: 50px;
+  width: 15%; /* Fixed width for ads section */
+  text-align: center;
+}
+
+.footer {
+  background-color: #ADD8E6; /* Light blue */
+}
+h2{
+    text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">HEADER</header>
+    <div class="main">
+      <nav class="menu">
+        <ul>
+            <h3>MENU</h3>
+          <li>ITEM 1</li>
+          <li>ITEM 2</li>
+          <li>ITEM 3</li>
+          <li>ITEM 4</li>
+          <li>ITEM 5</li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h2>CONTENT</h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit eius molestias magni distinctio quam illum possimus modi recusandae adipisci! Vel nemo id aspernatur quae quod! Doloremque obcaecati doloribus fuga mollitia?Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <aside class="ads">
+        AD<br>AD
+      </aside>
+    </div>
+    <footer class="footer">FOOTER</footer>
+  </div>
+</body>
+</html>

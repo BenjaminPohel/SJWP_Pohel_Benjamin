@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Benjamin Pohel">
+    <title>Zadaća4</title>
+    <style>
+        #okvir{
+            width: 400px;
+            height: 300px;
+            border: 5px solid black;
+            background-color: #FADE88;
+            position: relative
+        }
+        #big{
+            position: absolute;
+            background-color: #e3516e;
+            height: 125px;
+            width: 250px;
+            top: 87.5px;
+            left: 75px;
+        }
+        #bigk{
+            position: absolute;
+            background-color: #FADE88;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left:150px;
+        }
+        #smallk{
+            position: absolute;
+            background-color: #e3516e;
+            border-radius: 50%;
+            height:40px;
+            width: 40px;
+            top: 130px;
+            left:180px;
+            z-index: +1;
+        }
+        #sredina{
+            position: absolute;
+            background-color: #FADE88;
+            width:275px;
+            height:41.67px;
+            left:62.5px;
+            top:129px;
+        }
+        #gorel{
+            position: absolute;
+            background-color: #FADE88;
+            width: 80px;
+            height:60px;
+            rotate: -35deg;
+            top:52px;
+            left: 49px;
+        }
+        #gored{
+            position: absolute;
+            background-color: #FADE88;
+            width: 80px;
+            height:60px;
+            rotate: 35deg;
+            top:52px;
+            left: 271px;
+        }
+        #doljed{
+            position: absolute;
+            background-color: #FADE88;
+            width: 80px;
+            height:60px;
+            rotate: -35deg;
+            top:188px;
+            left: 271px;
+        }
+        #doljel{
+            position: absolute;
+            background-color: #FADE88;
+            width: 80px;
+            height:60px;
+            rotate: 35deg;
+            top:188px;
+            left: 49px;
+        }
+        .Vizitka{
+            width: 500px;
+            height: 300px;
+            border: 5px solid black;
+        }
+
+        .svojstva{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .profilna{
+            width: 150px;
+            height: 150px;
+            margin: 15px 0px 15px 15px;
+        
+        }
+
+        .informacije{
+            flex: 1;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .opis{
+            font-size: 15px;
+            margin: 5px;
+        }
+
+        .mail{
+            font-size: 15px;
+            margin: 20px 0px 0px 3px;
+        }
+
+        .telefon{
+            font-size: 15px;
+            margin: 3px 0px 20px 3px;
+        }
+
+        .mreze{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <img src="files/slika.png" alt="Original" height="400px">
+    <div id="okvir">
+        <div id="big"></div>
+        <div id="bigk"></div>
+        <div id="smallk"></div>
+        <div id="sredina"></div>
+        <div id="gorel"></div>
+        <div id="gored"></div>
+        <div id="doljed"></div>
+        <div id="doljel"></div>
+    </div>
+    <br>
+    <div class="Vizitka">
+        
+        <div class="svojstva">
+
+            <img class="profilna" src="files/TSLogo_small_notext.png" alt="profilna">
+            <div class="informacije">
+                <h1 style="font-size: 40px;">Benjamin Pohel</h1>
+                <p class="opis">Učenik Tehničke škole Slavonski Brod. Volim i treniram stolni tenis,igram igrice i gledam anime.</p>
+                <p class="mail">Email: benjaminpohl1@gmail.com</p>
+                <p class="telefon">Telefon: +385 98 976 1035</p>
+                <div class="mreze">
+                    <img style="width: 40px; height: 40px;" src="files/insta.jpg" alt="instagram">
+                    <img style="width: 40px; height: 40px;" src="https://png.pngtree.com/element_our/sm/20180626/sm_5b321c9cb2d25.jpg" alt="snapchat">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>

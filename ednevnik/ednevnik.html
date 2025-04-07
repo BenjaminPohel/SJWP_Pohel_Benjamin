@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        #h{
+            background-color: #0d3a5e;
+        border-bottom: 3px solid #1b75bc;
+            height: 60px;
+                justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    user-select: none;
+    width: 100%;
+    z-index: 30;
+        }
+        p{
+            color: white;
+            font-size: 24px;
+            font-family: open sans bold;
+            position: absolute;
+            left: 10px;
+        }
+        #g{
+            position: absolute;
+            height: 4px;
+            width: 106px;
+            background-color: white;
+            top:47px;
+            left: 10px;
+            background-image: linear-gradient(to right,#52b458,#9f569f,#2e8fb6);
+        }
+        h1{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            top: 213px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            line-height: 1.1
+        }
+        #username{
+            display: flex;
+            border: 1px solid #cbcbcb;
+            height: 2.5em;
+            margin: 0 auto;
+            padding-left: 2px;
+            width: 340px;
+            position:relative;
+            top: 253px;
+            justify-content: center;
+        }
+        #pass{
+            display: flex;
+            border: 1px solid #cbcbcb;
+            height: 2.5em;
+            margin: 0 auto;
+            padding-left: 2px;
+            width: 340px;
+            position:relative;
+            top: 279px;
+            justify-content: center;
+        }
+        .lab{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            height: 2em;
+            margin-right: 5px;
+            text-align: right;
+            display: flex;
+        }
+        #ime{
+            position: absolute;
+            top: 35.75%;
+            left: 35%;
+        }
+        #loz{
+            position: absolute;
+            top: 42.5%;
+            left:37.5%;
+        }
+        img{
+            display: flex;
+            justify-content:center;
+            position: absolute;
+            width: 175px;
+            height: 175px;
+            bottom: 10px;
+            left: 45%;
+        }
+        button{
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top: 455px;
+            height: 2.5em;
+            width:340px;
+            left:41.25%;
+            background-color: #0d3a5e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="h">
+        <p id="">e-Dnevnik</p>
+        <div id="g"></div>
+    </div>
+    <h1>Dobro došli</h1>
+    <input type="text" id="username">
+    <input type="text" id="pass">
+    <label for="" id="ime" class="lab">Korisničko ime:</label>
+    <label for=""id="loz" class="lab">Lozinka:</label>
+    <button>Prijava</button>
+    <img src="cnlogo.svg" alt="">
+</body>
+</html>

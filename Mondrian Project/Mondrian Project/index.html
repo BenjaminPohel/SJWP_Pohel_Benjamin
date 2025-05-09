@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      margin: 50px;
+    }
+    .container{
+      display: grid;
+      width: 748px;
+      height: 748px;
+      background-color: black;
+      grid-template-columns: 330px 350px 50px;
+      grid-template-rows: 415px 131px 155px 20px;
+      gap: 9px;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .white{
+      background-color: #F0F1EC;
+    }
+    .blue{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .yellow{
+      background-color: #F9D01E;
+      width: 198px;
+    }
+    .black{
+      background-color: #232629;
+      width: 153px;
+    }
+    .a{
+      grid-column: span 2;
+    }
+    .b, .c{
+      grid-row: span 2;
+    }
+    .d{
+      grid-row: span 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <div class="red"></div>
+  <div class="white a"></div>
+  <div class="white b"></div>
+  <div class="white c"></div>
+  <div class="blue"></div>
+  <div class="white d"></div>
+  <div class="white e"></div>
+  <div class="yellow"></div>
+  <div class="black"></div>
+</div>
+</body>
+
+</html>

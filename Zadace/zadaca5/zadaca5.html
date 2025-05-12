@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Benjamin Pohel">
+    <title>Zadaća4</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url('https://i1.sndcdn.com/visuals-000185796681-cluDJl-t1240x260.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.flex-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.champions {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.champion {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.champion-name {
+    margin: 0;
+}
+
+.champion-subtitle {
+    margin: 0;
+    margin-top: 10px;
+    display: block;
+}
+#title{
+    padding: 5px;
+}
+#news{
+    padding: 5px;
+}
+a:link{
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the League of Legends Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.leagueoflegends.com/en-gb/champions/" target="_blank">Champions</a></li>
+                <li><a href="https://universe.leagueoflegends.com/en_GB/" target="_blank">Lore</a></li>
+                <li><a href="https://www.leagueoflegends.com/en-gb/news/" target="_blank">News</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="title" >Champions</h2>
+        <section class="flex-container">
+            <div class="champion">
+                <h2 class="champion-name">Ahri</h2>
+                <h3 class="champion-subtitle">The Nine-Tailed Fox</h3>
+            </div>
+            <div class="champion">
+                <h2 class="champion-name">Garen</h2>
+                <h3 class="champion-subtitle">The Might of Demacia</h3>
+            </div>
+            <div class="champion">
+                <h2 class="champion-name">Lux</h2>
+                <h3 class="champion-subtitle">The Lady of Luminosity</h3>
+            </div>
+        </section>
+        <section id="title">
+            <h2>Lore</h2>
+            <p class="lore-subtitle">Explore the rich lore of the League of Legends universe.</p>
+        </section>
+        <section class="flex-container">
+            
+            <div class="flex-item">The Ruined King</div>
+            <div class="flex-item">The Freljord</div>
+            <div class="flex-item">Demacia</div>
+        </section>
+        <section id="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>New Champion Release</h3>
+                <p>Check out the latest champion added to the game!</p>
+            </article>
+            <article>
+                <h3>Patch Notes</h3>
+                <p>Read about the latest changes and updates.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 League of Legends Fan Page</p>
+    </footer>
+</body>
+</html>

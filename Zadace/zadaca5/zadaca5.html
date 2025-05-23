@@ -56,6 +56,9 @@ nav ul li {
     padding: 20px;
     margin: 10px;
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -99,9 +102,10 @@ footer {
 #news{
     padding: 5px;
 }
-a:link{
+a.headerlink:link{
     color: white;
 }
+
     </style>
 </head>
 <body>
@@ -109,26 +113,29 @@ a:link{
         <h1>Welcome to the League of Legends Fan Page</h1>
         <nav>
             <ul>
-                <li><a href="https://www.leagueoflegends.com/en-gb/champions/" target="_blank">Champions</a></li>
-                <li><a href="https://universe.leagueoflegends.com/en_GB/" target="_blank">Lore</a></li>
-                <li><a href="https://www.leagueoflegends.com/en-gb/news/" target="_blank">News</a></li>
+                <li><a href="https://www.leagueoflegends.com/en-gb/champions/" target="_blank" class="headerlink">Champions</a></li>
+                <li><a href="https://universe.leagueoflegends.com/en_GB/" target="_blank" class="headerlink">Lore</a></li>
+                <li><a href="https://www.leagueoflegends.com/en-gb/news/" target="_blank" class="headerlink">News</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2 id="title" >Champions</h2>
+        <h2 id="title" >One of the most popular champions</h2>
         <section class="flex-container">
             <div class="champion">
                 <h2 class="champion-name">Ahri</h2>
                 <h3 class="champion-subtitle">The Nine-Tailed Fox</h3>
+                <img src="ahri.png" alt="ahri_img" width="200">
             </div>
             <div class="champion">
                 <h2 class="champion-name">Garen</h2>
                 <h3 class="champion-subtitle">The Might of Demacia</h3>
+                <img src="garen.png" alt="ahri_img" width="200">
             </div>
             <div class="champion">
                 <h2 class="champion-name">Lux</h2>
                 <h3 class="champion-subtitle">The Lady of Luminosity</h3>
+                <img src="lux.png" alt="ahri_img" width="200">
             </div>
         </section>
         <section id="title">
@@ -137,24 +144,27 @@ a:link{
         </section>
         <section class="flex-container">
             
-            <div class="flex-item">The Ruined King</div>
-            <div class="flex-item">The Freljord</div>
-            <div class="flex-item">Demacia</div>
+            <div class="flex-item"><a href="https://universe.leagueoflegends.com/en_US/region/shurima/">Shurima</a><br><img src="Shuriman_Crest.webp" alt="" width="100"></div>
+            <div class="flex-item"><a href="https://universe.leagueoflegends.com/en_US/region/freljord/">The Freljord</a><br><img src="FreljordCrest.png" alt="" width="100"></div>
+            <div class="flex-item"><a href="https://universe.leagueoflegends.com/en_US/region/demacia/">Demacia</a><br><img src="Demacia_Crest.webp" alt="" width="100"></div>
         </section>
         <section id="news">
             <h2>Latest News</h2>
             <article>
-                <h3>New Champion Release</h3>
-                <p>Check out the latest champion added to the game!</p>
+                <h3>Check out the Esports news</h3>
+                <a href="https://www.leagueoflegends.com/en-us/news/esports/" target="_blank">Esports</a>
+                <br>
+                <img src="esport.jpg" alt="" width="100">
             </article>
             <article>
-                <h3>Patch Notes</h3>
-                <p>Read about the latest changes and updates.</p>
+                <h3>Read about the latest changes and updates.</h3>
+                <a href="https://www.leagueoflegends.com/en-us/news/tags/patch-notes/" target="_blank">Patch Notes</a>
             </article>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 League of Legends Fan Page</p>
+        <p>Contact:riotgames@gmail.com</p>
     </footer>
 </body>
 </html>
